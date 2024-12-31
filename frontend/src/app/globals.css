@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  /* font-family: 'Inter', sans-serif; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+input {
+  padding: 12px 16px; /* Thêm padding để tạo không gian thoải mái cho người dùng */
+  outline: none; /* Loại bỏ viền khi input được focus */
+  border-radius: 10px; /* Tạo các góc bo tròn */
+  border: 1px solid #e1ebeb; /* Đặt viền nhẹ với màu xám nhạt */
+  transition: all 0.3s ease; /* Thêm hiệu ứng chuyển tiếp khi hover hoặc focus */
+  font-size: 16px; /* Tăng kích thước chữ để dễ đọc */
+}
+
+input:focus {
+  border-color: #00abff;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 171, 255, 0.4);
+}
+
+input::placeholder {
+  color: grey;
+  opacity: 1;
+}
